@@ -1,0 +1,155 @@
+/* ===========================
+   01. GLOBAL STYLES
+   =========================== */
+
+:root {
+  /* PRIMARY */
+  --color-midnight-green: #014e56;
+  --color-light-coral: #f67e7e;
+  --color-white: #ffffff;
+
+  /* SECONDARY */
+  --color-rapture-blue: #79c8c7;
+  --color-police-blue: #2c6269;
+  --color-deep-jungle-green: #004047;
+  --color-sacramento-green: #012f34;
+  --color-dark-green: #002529;
+
+  /* SEMANTIC COLORS */
+  --color-page-bg: var(--color-midnight-green);
+  --color-text: var(--color-white);
+  --color-accent: var(--color-light-coral);
+  --color-focus: var(--color-rapture-blue);
+
+  /* TYPOGRAPHY */
+  --font-family-base: 'Livvic', sans-serif;
+
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* LAYOUT */
+  --container-max-width: 1158px;
+  --container-padding: 24px;
+}
+
+/* UNIVERSAL RESET */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+
+  background-color: var(--color-page-bg);
+  color: var(--color-text);
+
+  font-family: var(--font-family-base);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 4px;
+}
+
+/* HEADER — MOBILE */
+
+.site-header {
+  padding-top: 48px;
+}
+
+.container {
+  width: 100%;
+  padding-inline: 24px;
+  margin-inline: auto;
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 32px;
+}
+
+/* LOGO */
+
+.site-header__logo img {
+  display: block;
+  width: 128px;
+  height: auto;
+}
+
+/* HAMBURGER BUTTON */
+
+.menu-toggle {
+  display: grid;
+  place-items: center;
+
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  margin-right: -12px;
+
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.menu-toggle img {
+  display: block;
+  width: 20px;
+  height: 17px;
+}
+
+.menu-toggle:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}

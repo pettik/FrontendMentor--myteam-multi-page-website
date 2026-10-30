@@ -4,12 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>myteam | Home</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/main.js" defer></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <script src="./assets/js/main.js" defer></script>
   </head>
   <body>
     <header class="site-header">
-      <!-- Logo a navigace -->
+      <div class="container site-header__inner">
+        <a href="./index.html" class="site-header__logo">
+          <img src="./assets/img/logo.svg" alt="myteam" />
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <img
+            src="./assets/img/icon-hamburger.svg"
+            alt=""
+            width="20"
+            height="17"
+          />
+        </button>
+
+        <nav
+          class="site-nav"
+          id="primary-navigation"
+          aria-label="Main navigation"
+          hidden
+        >
+          <a href="./index.html">home</a>
+          <a href="./about.html">about</a>
+          <a href="./contact.html">contact us</a>
+        </nav>
+      </div>
     </header>
 
     <main>
