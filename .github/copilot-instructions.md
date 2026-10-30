@@ -23,7 +23,7 @@ Allowed types:
 - refactor: Code restructuring without behavior changes
 - style: Formatting-only changes
 - docs: Documentation changes
-- chore: Configuration and maintenance
+- task: Configuration and maintenance
 - test: Tests
 
 Rules:
