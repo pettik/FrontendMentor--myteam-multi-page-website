@@ -153,3 +153,21 @@ a {
   outline: 2px solid white;
   outline-offset: 2px;
 }
+
+/* ===========================
+   MOBILE NAVIGATION
+   =========================== */
+
+.site-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  width: 255px;
+  max-width: 100%;
+  height: 100dvh;
+
+  background-color: var(--color-police-blue);
+
+  z-index: 100;
+}
