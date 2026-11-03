@@ -288,3 +288,47 @@ a {
     transition: none;
   }
 }
+
+/* =====================================
+   HOME — HERO / MOBILE
+   ===================================== */
+
+.hero {
+  padding-block: 80px 192px;
+
+  background-image: url("../img/bg-pattern-home-2.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+/* HERO CONTENT */
+
+.hero__content {
+  text-align: center;
+}
+
+/* MAIN HEADING */
+
+.hero__title {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: var(--font-weight-bold);
+}
+
+.hero__title-line {
+  display: block;
+}
+
+.hero__accent {
+  color: var(--color-light-coral);
+}
+
+/* DESCRIPTION */
+
+.hero__description {
+  margin-top: 24px;
+
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: var(--font-weight-semibold);
+}
