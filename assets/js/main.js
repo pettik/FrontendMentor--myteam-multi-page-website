@@ -118,3 +118,35 @@ if (menuToggle && menuClose && menu && overlay) {
     }
   });
 }
+
+// ABOUT — DIRECTOR DETAILS
+
+document.querySelectorAll(".director-card").forEach((card) => {
+  const toggle = card.querySelector(".director-card__toggle");
+  const avatar = card.querySelector(".director-card__avatar");
+  const name = card.querySelector(".director-card__name");
+  const role = card.querySelector(".director-card__role");
+  const details = card.querySelector(".director-card__details");
+
+  if (!toggle || !avatar || !name || !role || !details) return;
+
+  function setExpanded(expanded) {
+    toggle.setAttribute("aria-expanded", String(expanded));
+    toggle.setAttribute(
+      "aria-label",
+      `${expanded ? "Hide" : "Show"} details for ${name.textContent.trim()}`,
+    );
+
+    card.classList.toggle("is-expanded", expanded);
+    avatar.hidden = expanded;
+    role.hidden = expanded;
+    details.hidden = !expanded;
+  }
+
+  setExpanded(toggle.getAttribute("aria-expanded") === "true");
+  toggle.hidden = false;
+
+  toggle.addEventListener("click", () => {
+    setExpanded(toggle.getAttribute("aria-expanded") !== "true");
+  });
+});

@@ -1,0 +1,369 @@
+/* =====================================
+   ABOUT — INTRO / MOBILE FIRST
+   ===================================== */
+
+.about-hero {
+  padding-block: 80px 108px;
+
+  background-image: url("../img/bg-pattern-about-1-mobile-nav-1.svg");
+  background-repeat: no-repeat;
+  background-position: right -100px bottom -100px;
+
+  text-align: center;
+}
+
+.about-hero__title {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: var(--font-weight-bold);
+}
+
+.about-hero__description {
+  max-width: 457px;
+  margin: 16px auto 0;
+
+  font-size: 15px;
+  line-height: 28px;
+}
+
+/* =====================================
+   ABOUT — DIRECTORS / MOBILE FIRST
+   ===================================== */
+
+.directors {
+  padding-block: 88px 116px;
+
+  background-color: var(--color-deep-jungle-green);
+  background-image:
+    url("../img/bg-pattern-about-2-contact-1.svg"),
+    url("../img/bg-pattern-home-4-about-3.svg");
+  background-repeat: no-repeat;
+  background-position: left -100px top -100px, right bottom;
+
+  text-align: center;
+}
+
+.directors__title,
+.clients__title {
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: var(--font-weight-bold);
+}
+
+.directors__list {
+  display: grid;
+  gap: 76px;
+  margin-top: 48px;
+}
+
+.director-card {
+  position: relative;
+
+  min-width: 0;
+  min-height: 253px;
+  height: 100%;
+  padding: 32px 24px 56px;
+
+  background-color: var(--color-sacramento-green);
+}
+
+.director-card.is-expanded {
+  background-color: var(--color-dark-green);
+}
+
+.director-card__avatar {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 16px;
+
+  border: 2px solid #c4fffe;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.director-card__name {
+  color: var(--color-rapture-blue);
+
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: var(--font-weight-bold);
+}
+
+.director-card__role {
+  font-size: 15px;
+  line-height: 25px;
+  font-style: italic;
+  font-weight: var(--font-weight-medium);
+}
+
+.director-card__details {
+  max-width: 254px;
+  margin: 8px auto 0;
+}
+
+.director-card__quote {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.director-card__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.director-card__social-link {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+}
+
+.director-card__social-link::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+
+  background-color: currentColor;
+  mask-image: var(--director-social-icon);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+.director-card__social-link:hover {
+  color: var(--color-light-coral);
+}
+
+.director-card__social-link--twitter {
+  --director-social-icon: url("../img/icon-twitter.svg");
+}
+
+.director-card__social-link--linkedin {
+  --director-social-icon: url("../img/icon-linkedin.svg");
+}
+
+.director-card__toggle {
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  padding: 0;
+
+  border: 0;
+  border-radius: 50%;
+  background-color: var(--color-light-coral);
+}
+
+.director-card__toggle:hover,
+.director-card__toggle[aria-expanded="true"] {
+  background-color: var(--color-rapture-blue);
+}
+
+.director-card__toggle[aria-expanded="true"]:hover {
+  background-color: var(--color-light-coral);
+}
+
+.director-card__toggle[aria-expanded="true"] img {
+  transform: rotate(45deg);
+}
+
+/* =====================================
+   ABOUT — CLIENTS / MOBILE FIRST
+   ===================================== */
+
+.clients {
+  padding-block: 88px;
+
+  background-color: var(--color-sacramento-green);
+  background-image: url("../img/bg-pattern-about-4.svg");
+  background-repeat: no-repeat;
+  background-position: left -100px top -100px;
+
+  text-align: center;
+}
+
+.clients__list {
+  display: grid;
+  justify-items: center;
+  gap: 56px;
+  margin-top: 64px;
+}
+
+.clients__logo {
+  height: auto;
+}
+
+.clients__logo--verge,
+.clients__logo--techradar {
+  width: 147px;
+}
+
+.clients__logo--jakarta {
+  width: 162px;
+}
+
+.clients__logo--guardian {
+  width: 159px;
+}
+
+.clients__logo--gadgets {
+  width: 87px;
+}
+
+/* =====================================
+   ABOUT — TABLET / 768PX AND UP
+   ===================================== */
+
+@media (min-width: 48em) {
+  .about-hero {
+    padding-block: 112px;
+    background-position: right -100px bottom;
+  }
+
+  .about-hero__title {
+    font-size: 64px;
+    line-height: 56px;
+  }
+
+  .about-hero__description {
+    margin-top: 24px;
+  }
+
+  .directors {
+    padding-block: 100px 128px;
+    background-position: left -100px top, right bottom;
+  }
+
+  .directors__inner {
+    max-width: 653px;
+  }
+
+  .directors__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 11px;
+  }
+
+  .clients {
+    padding-block: 100px;
+    background-position: left top -100px;
+  }
+
+  .clients__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 48px;
+  }
+
+  .clients__list > li {
+    min-width: 0;
+  }
+
+  .clients__logo--verge,
+  .clients__logo--techradar {
+    width: 103px;
+  }
+
+  .clients__logo--jakarta {
+    width: 114px;
+  }
+
+  .clients__logo--guardian {
+    width: 112px;
+  }
+
+  .clients__logo--gadgets {
+    width: 61px;
+  }
+}
+
+/* =====================================
+   ABOUT — DESKTOP / 1200PX AND UP
+   ===================================== */
+
+@media (min-width: 75em) {
+  .about-hero {
+    padding-block: 120px;
+    text-align: left;
+  }
+
+  .about-hero__inner {
+    display: grid;
+    grid-template-columns: minmax(0, 350px) minmax(0, 730px);
+    gap: 30px;
+  }
+
+  .about-hero__title {
+    line-height: 100px;
+  }
+
+  .about-hero__description {
+    max-width: none;
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .about-hero__description::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    margin-bottom: 40px;
+    background-color: var(--color-light-coral);
+  }
+
+  .directors {
+    padding-block: 140px 168px;
+  }
+
+  .directors__inner {
+    max-width: var(--container-max-width);
+  }
+
+  .directors__title,
+  .clients__title {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .directors__list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 30px;
+    margin-top: 64px;
+  }
+
+  .clients {
+    padding-block: 140px;
+    background-position: left top;
+  }
+
+  .clients__list {
+    margin-top: 64px;
+  }
+
+  .clients__logo--verge,
+  .clients__logo--techradar {
+    width: 165px;
+  }
+
+  .clients__logo--jakarta {
+    width: 184px;
+  }
+
+  .clients__logo--guardian {
+    width: 180px;
+  }
+
+  .clients__logo--gadgets {
+    width: 98px;
+  }
+}
