@@ -1,49 +1,294 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Build high-performing distributed teams with myteam. Connect with experienced global talent and discover the teams behind our clients’ success."
+    />
+    <title>myteam | Contact</title>
+    <link rel="icon" type="image/png" href="./assets/img/favicon-32x32.png" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | myteam website challenge - Contact</title>
-</head>
-<body>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  home
-  about
+    <link
+      href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
 
-  contact us
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
 
+    <script src="./assets/js/main.js" defer></script>
+    <script src="./assets/js/contact.js" defer></script>
+  </head>
+  <body class="page-contact">
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a href="./index.html" class="site-header__logo">
+          <img src="./assets/img/logo.svg" alt="myteam" width="128" height="32" />
+        </a>
 
-  Contact
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <img
+            src="./assets/img/icon-hamburger.svg"
+            alt=""
+            width="20"
+            height="17"
+          />
+        </button>
 
-  Ask us about
+        <nav
+          class="site-nav"
+          id="primary-navigation"
+          aria-label="Main navigation"
+          inert
+        >
+          <button
+            class="site-nav__close"
+            type="button"
+            aria-label="Close navigation"
+          >
+            <img
+              src="./assets/img/icon-close.svg"
+              alt=""
+              width="18"
+              height="17"
+            />
+          </button>
 
-  The quality of our talent network
-  Usage & implementation of our software
-  How we help drive innovation
+          <div class="site-nav__links">
+            <a href="./index.html">home</a>
+            <a href="./about.html">about</a>
+            <a href="./contact.html" class="button site-nav__contact" aria-current="page">
+              contact us
+            </a>
+          </div>
+        </nav>
+      </div>
 
-  Name
-  Email Address
-  Company Name
-  Title
-  Message
+      <div class="menu-overlay" aria-hidden="true"></div>
+    </header>
 
-  submit
+    <main id="main-content" tabindex="-1">
+      <section class="contact" aria-labelledby="contact-title">
+        <div class="container contact__inner">
+          <div class="contact__intro">
+            <h1 class="contact__title" id="contact-title">Contact</h1>
+            <h2 class="contact__subtitle">Ask us about</h2>
 
+            <ul class="contact__topics" role="list">
+              <li class="contact__topic">
+                <img
+                  class="contact__icon"
+                  src="./assets/img/icon-person.svg"
+                  alt=""
+                  width="72"
+                  height="72"
+                />
+                <p>The quality of our talent network</p>
+              </li>
+              <li class="contact__topic">
+                <img
+                  class="contact__icon"
+                  src="./assets/img/icon-cog.svg"
+                  alt=""
+                  width="72"
+                  height="72"
+                />
+                <p>Usage &amp; implementation of our software</p>
+              </li>
+              <li class="contact__topic">
+                <img
+                  class="contact__icon"
+                  src="./assets/img/icon-chart.svg"
+                  alt=""
+                  width="72"
+                  height="72"
+                />
+                <p>How we help drive innovation</p>
+              </li>
+            </ul>
+          </div>
 
+          <form
+            class="contact-form"
+            method="post"
+            aria-labelledby="contact-form-title"
+            aria-describedby="contact-form-instructions"
+          >
+            <h2 class="contact-form__label" id="contact-form-title">Contact form</h2>
+            <p class="contact-form__label" id="contact-form-instructions">
+              Name, Email Address and Message are required.
+            </p>
 
-  home
-  about
+            <div class="contact-form__fields">
+              <div class="contact-form__field">
+                <label class="contact-form__label" for="contact-name">Name</label>
+                <input
+                  class="contact-form__control"
+                  id="contact-name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  placeholder="Name"
+                  aria-describedby="contact-name-error"
+                  required
+                />
+                <p class="contact-form__error" id="contact-name-error" hidden></p>
+              </div>
 
-  987  Hillcrest Lane
-  Irvine, CA
-  California 92714
-  Call Us : 949-833-7432
+              <div class="contact-form__field">
+                <label class="contact-form__label" for="contact-email">Email Address</label>
+                <input
+                  class="contact-form__control"
+                  id="contact-email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  autocapitalize="none"
+                  spellcheck="false"
+                  placeholder="Email Address"
+                  aria-describedby="contact-email-error"
+                  required
+                />
+                <p class="contact-form__error" id="contact-email-error" hidden></p>
+              </div>
 
-  Copyright 2020. All Rights Reserved
-  
-</body>
+              <div class="contact-form__field">
+                <label class="contact-form__label" for="contact-company">Company Name</label>
+                <input
+                  class="contact-form__control"
+                  id="contact-company"
+                  name="company"
+                  type="text"
+                  autocomplete="organization"
+                  placeholder="Company Name"
+                />
+              </div>
+
+              <div class="contact-form__field">
+                <label class="contact-form__label" for="contact-job-title">Title</label>
+                <input
+                  class="contact-form__control"
+                  id="contact-job-title"
+                  name="title"
+                  type="text"
+                  autocomplete="organization-title"
+                  placeholder="Title"
+                />
+              </div>
+
+              <div class="contact-form__field">
+                <label class="contact-form__label" for="contact-message">Message</label>
+                <textarea
+                  class="contact-form__control contact-form__control--message"
+                  id="contact-message"
+                  name="message"
+                  rows="2"
+                  placeholder="Message"
+                  aria-describedby="contact-message-error"
+                  required
+                ></textarea>
+                <p class="contact-form__error" id="contact-message-error" hidden></p>
+              </div>
+            </div>
+
+            <button class="button contact-form__submit" type="submit" disabled>
+              submit
+            </button>
+            <p
+              class="contact-form__status"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+            ></p>
+            <noscript>
+              <p class="contact-form__notice">
+                Enable JavaScript to validate this form. Messages are not sent.
+              </p>
+            </noscript>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div class="site-footer__branding">
+          <a class="site-footer__logo" href="./index.html">
+            <img src="./assets/img/logo.svg" alt="myteam" width="96" height="24" />
+          </a>
+
+          <nav class="site-footer__nav" aria-label="Footer navigation">
+            <a href="./index.html">home</a>
+            <a href="./about.html">about</a>
+          </nav>
+        </div>
+
+        <address class="site-footer__address">
+          987 Hillcrest Lane<br />
+          Irvine, CA<br />
+          California 92714<br />
+          Call Us : <a href="tel:+19498337432">949-833-7432</a>
+        </address>
+
+        <div class="site-footer__meta">
+          <ul class="site-footer__social" aria-label="Social media">
+            <li>
+              <a
+                class="site-footer__social-link"
+                href="https://www.facebook.com/"
+                aria-label="Facebook"
+              >
+                <span
+                  class="site-footer__social-icon site-footer__social-icon--facebook"
+                  aria-hidden="true"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="site-footer__social-link"
+                href="https://www.pinterest.com/"
+                aria-label="Pinterest"
+              >
+                <span
+                  class="site-footer__social-icon site-footer__social-icon--pinterest"
+                  aria-hidden="true"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="site-footer__social-link"
+                href="https://x.com/"
+                aria-label="Twitter (X)"
+              >
+                <span
+                  class="site-footer__social-icon site-footer__social-icon--twitter"
+                  aria-hidden="true"
+                ></span>
+              </a>
+            </li>
+          </ul>
+
+          <p class="site-footer__copyright">Copyright 2020. All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
 </html>
