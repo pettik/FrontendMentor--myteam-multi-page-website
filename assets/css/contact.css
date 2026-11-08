@@ -5,7 +5,7 @@
 .contact {
   padding-block: 80px 88px;
 
-  background-image: url("../img/bg-pattern-contact-2.svg");
+  background-image: url('../img/bg-pattern-contact-2.svg');
   background-repeat: no-repeat;
   background-position: right -100px bottom -113px;
 }
@@ -107,13 +107,13 @@
   resize: vertical;
 }
 
-.contact-form__control[aria-invalid="true"] {
+.contact-form__control[aria-invalid='true'] {
   border-bottom-color: var(--color-light-coral);
   color: var(--color-light-coral);
   outline-color: var(--color-light-coral);
 }
 
-.contact-form__control[aria-invalid="true"]::placeholder {
+.contact-form__control[aria-invalid='true']::placeholder {
   color: var(--color-light-coral);
 }
 
@@ -160,12 +160,15 @@
 
 @media (min-width: 48em) {
   .contact {
+    margin-top: 80px;
     padding-block: 112px;
 
     background-image:
-      url("../img/bg-pattern-about-2-contact-1.svg"),
-      url("../img/bg-pattern-contact-2.svg");
-    background-position: left -100px top, right -100px bottom;
+      url('../img/bg-pattern-about-2-contact-1.svg'),
+      url('../img/bg-pattern-contact-2.svg');
+    background-position:
+      left -100px top,
+      right -100px bottom;
   }
 
   .contact__inner {
