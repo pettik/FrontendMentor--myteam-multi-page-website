@@ -57,9 +57,9 @@ body {
   color: var(--color-text);
 
   font-family: var(--font-family-base);
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 600;
-  line-height: 25px;
+  line-height: 1.667;
 }
 
 img,
@@ -130,8 +130,8 @@ a {
   border: 2px solid currentColor;
   border-radius: 100px;
 
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.125rem;
+  line-height: 1.556;
   font-weight: var(--font-weight-semibold);
   text-decoration: none;
 }
@@ -269,9 +269,9 @@ a {
 }
 
 .site-nav__links a {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
-  line-height: 28px;
+  line-height: 1.556;
   text-decoration: none;
 }
 
@@ -356,8 +356,8 @@ a {
 /* MAIN HEADING */
 
 .hero__title {
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 2.5rem;
+  line-height: 1;
   font-weight: var(--font-weight-bold);
 }
 
@@ -374,8 +374,8 @@ a {
 .hero__description {
   margin-top: 24px;
 
-  font-size: 15px;
-  line-height: 28px;
+  font-size: 0.9375rem;
+  line-height: 1.867;
   font-weight: var(--font-weight-semibold);
 }
 
@@ -408,8 +408,8 @@ a {
 .features__title {
   max-width: 240px;
 
-  font-size: 32px;
-  line-height: 32px;
+  font-size: 2rem;
+  line-height: 1;
   font-weight: var(--font-weight-bold);
 }
 
@@ -451,14 +451,14 @@ a {
 .features__item-title {
   color: var(--color-light-coral);
 
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.125rem;
+  line-height: 1.556;
   font-weight: var(--font-weight-bold);
 }
 
 .features__description {
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 0.9375rem;
+  line-height: 1.667;
   font-weight: var(--font-weight-semibold);
 
   color: var(--color-white);
@@ -490,8 +490,8 @@ a {
   max-width: 573px;
   margin-inline: auto;
 
-  font-size: 32px;
-  line-height: 32px;
+  font-size: 2rem;
+  line-height: 1;
   font-weight: var(--font-weight-bold);
 }
 
@@ -515,8 +515,8 @@ a {
 }
 
 .testimonials__text {
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 0.9375rem;
+  line-height: 1.667;
   font-weight: var(--font-weight-semibold);
 }
 
@@ -527,14 +527,14 @@ a {
 .testimonials__name {
   color: var(--color-rapture-blue);
 
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.125rem;
+  line-height: 1.556;
   font-weight: var(--font-weight-bold);
 }
 
 .testimonials__role {
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 0.8125rem;
+  line-height: 1.385;
   font-style: italic;
   font-weight: var(--font-weight-medium);
 }
@@ -575,8 +575,8 @@ a {
 .cta__title {
   max-width: 327px;
 
-  font-size: 32px;
-  line-height: 32px;
+  font-size: 2rem;
+  line-height: 1;
   font-weight: var(--font-weight-bold);
 }
 
@@ -612,8 +612,8 @@ a {
   justify-content: center;
   gap: 24px;
 
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 0.9375rem;
+  line-height: 1.667;
 }
 
 .site-footer a {
@@ -746,8 +746,8 @@ a {
   }
 
   .hero__title {
-    font-size: 64px;
-    line-height: 56px;
+    font-size: 4rem;
+    line-height: 0.875;
   }
 
   .hero__description {
@@ -881,13 +881,14 @@ a {
   }
 
   .hero__title {
-    font-size: 100px;
-    line-height: 100px;
+    font-size: 6.25rem;
+    line-height: 1;
   }
 
   .hero__description {
     margin: 0;
-    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.556;
   }
 
   .hero__description::before {
@@ -917,8 +918,8 @@ a {
   }
 
   .features__title {
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .features__list {
@@ -936,8 +937,8 @@ a {
   .testimonials__title {
     max-width: 932px;
 
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .testimonials__list {
@@ -964,8 +965,8 @@ a {
   }
 
   .cta__title {
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .site-footer {
@@ -987,8 +988,8 @@ a {
 
   .site-footer__nav {
     gap: 40px;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.125rem;
+    line-height: 1.556;
   }
 
   .site-footer__address {

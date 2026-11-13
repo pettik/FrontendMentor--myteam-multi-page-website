@@ -13,8 +13,8 @@
 }
 
 .about-hero__title {
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 2.5rem;
+  line-height: 1;
   font-weight: var(--font-weight-bold);
 }
 
@@ -22,8 +22,8 @@
   max-width: 457px;
   margin: 16px auto 0;
 
-  font-size: 15px;
-  line-height: 28px;
+  font-size: 0.9375rem;
+  line-height: 1.867;
 }
 
 /* =====================================
@@ -45,8 +45,8 @@
 
 .directors__title,
 .clients__title {
-  font-size: 32px;
-  line-height: 32px;
+  font-size: 2rem;
+  line-height: 1;
   font-weight: var(--font-weight-bold);
 }
 
@@ -84,14 +84,14 @@
 .director-card__name {
   color: var(--color-rapture-blue);
 
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.125rem;
+  line-height: 1.556;
   font-weight: var(--font-weight-bold);
 }
 
 .director-card__role {
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 0.9375rem;
+  line-height: 1.667;
   font-style: italic;
   font-weight: var(--font-weight-medium);
 }
@@ -102,8 +102,8 @@
 }
 
 .director-card__quote {
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 0.9375rem;
+  line-height: 1.667;
 }
 
 .director-card__social {
@@ -229,8 +229,8 @@
   }
 
   .about-hero__title {
-    font-size: 64px;
-    line-height: 56px;
+    font-size: 4rem;
+    line-height: 0.875;
   }
 
   .about-hero__description {
@@ -303,13 +303,14 @@
   }
 
   .about-hero__title {
-    line-height: 100px;
+    line-height: 1.5625;
   }
 
   .about-hero__description {
     max-width: none;
     margin: 0;
-    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.556;
   }
 
   .about-hero__description::before {
@@ -331,8 +332,8 @@
 
   .directors__title,
   .clients__title {
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .directors__list {
